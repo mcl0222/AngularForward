@@ -36,20 +36,17 @@ It contains a Python version and a MATLAB version.
 - Python version is much faster than the Matlab version due to vectorization
 - We optimized the forward propagation process by replacing the for loop with a torch tensor
     MATLAB:
-    -%forward propagation
-        H=exp(1i*(distance)*sqrt(k0^2-Kx1.^2-Ky1.^2));
-        for j=1:2*nx1-1
-            for k=1:2*ny1-1
-                if Kx1(j,k)^2+Ky1(j,k)^2>k0^2
-                    H(j,k)=0;
-                end
-            end
-        end
+![image](https://github.com/mcl0222/AngularForward/assets/85031225/904b1379-01aa-4c31-95a0-2ae8d1d1ed9f)
+### Running time:
+
 ![750f9e486a2be025013466a76126ae8](https://github.com/mcl0222/AngularForward/assets/85031225/1c599908-e3d4-4f98-87f7-1fd54a0ceacd)
 
 
     Python:
-     H = torch.tensor(np.exp(1j * (self.distance) * np.sqrt(np.maximum(k0 ** 2 - Kx1 ** 2 - Ky1 ** 2, 0))), dtype=torch.cdouble)
+![image](https://github.com/mcl0222/AngularForward/assets/85031225/eeca120f-59f5-40f1-be0b-4763f9508ddb)
+
+
+  ### Running time:
   ![image](https://github.com/mcl0222/AngularForward/assets/85031225/7b8a749d-61ec-4ed4-a97e-43da8c2596e1)
 
 
