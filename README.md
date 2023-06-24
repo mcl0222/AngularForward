@@ -42,7 +42,7 @@ It contains a Python version and a MATLAB version.
 
 
     Python
-    ![image](https://github.com/mcl0222/AngularForward/assets/85031225/eeca120f-59f5-40f1-be0b-4763f9508ddb)
+![image](https://github.com/mcl0222/AngularForward/assets/85031225/eeca120f-59f5-40f1-be0b-4763f9508ddb)
 
 
   ### Running time:
