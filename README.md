@@ -22,8 +22,7 @@ It contains a Python version and a MATLAB version.
   - go to the angular_forward_test.py file
   - Choose your angular frequency(angf), frequency(freq), speed of sound(c), receiver size(h), and receiver image distance(distance)
   - forward to the target folder via terminal
-  - type in
-Python: python angular_forward_test.py
+  - Python: python angular_forward_test.py
   - check projected images in the folder ./output_python
     
 - MATLAB:
